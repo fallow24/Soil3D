@@ -121,4 +121,4 @@ If you need to debug something, or build new software on the device, the followi
    ![image](https://github.com/fallow24/Soil3D/blob/master/frames.png)
 
  - Lidar frames and data vizualized in the lab:
-   
+   ![image](https://github.com/fallow24/Soil3D/blob/master/image000.png)
