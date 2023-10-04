@@ -116,3 +116,9 @@ If you need to debug something, or build new software on the device, the followi
 	- Launchfile location: ~/ws_livox/src/livox_ros_driver/launch
 
 	- RVIZ Visualization: Load "kaveh.rviz" config file
+
+ - TF tree for convenience:
+   ![image](https://github.com/fallow24/Soil3D/blob/master/frames.png)
+
+ - Lidar frames and data vizualized in the lab:
+   
