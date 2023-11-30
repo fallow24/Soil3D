@@ -112,7 +112,7 @@ $ bin/cartographer2scan --bag=NAME_OF_YOUR_BAGFILE --intensity --topics-PointClo
 
 Now we have lefthanded points given in centimeters (uos format). Afterwards, export the points into a righthanded coordinate system in meters:
 ```bash
-$ bin/exportPoints YOUR_OUTPUT_FOLDER -f uosr -R --xyz --scale=1 --highprecision 
+$ bin/exportPoints YOUR_OUTPUT_FOLDER -f uosr -R --xyz
 ```
 Note that YOUR_OUTPUT_FOLDER is the same as in the cartographer2scan command. The exportPoints command will output a "points.pts" file.
 Feel free to rename it to a fitting extension if you like, e.g. "points.txt". 
