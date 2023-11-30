@@ -142,3 +142,4 @@ If you need to debug something, or build new software on the device, the followi
 
  - Screenshot of the calibration process and point-to-point error (in cm) of the overlapping region:
    ![image](https://github.com/fallow24/Soil3D/blob/master/calib_screenshot.png)
+   ![image](https://github.com/fallow24/Soil3D/blob/master/image001.png)
