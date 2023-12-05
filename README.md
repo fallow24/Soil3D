@@ -107,12 +107,14 @@ These are the commands needed to convert ALL the points in the bagfile to a sing
 This command will convert the points in the bagfile to 3dtk format using the ros timestamps and tf tree.
 Please replace the text WRITTEN IN CAPS LOCK with your own inputs. For example, NAME_OF_YOUR_BAGFILE might be Test_5.bag, and YOUR_OUTPUT_FOLDER might be ~/Documents/scans.
 ```bash
-$ bin/cartographer2scan --bag=NAME_OF_YOUR_BAGFILE --intensity --topics-PointCloud2=/livox/lidar_3GGDJ7U00100171 /livox/lidar_3GGDJ7W00100801 --frame-map=odom --frame-base=base_link --output=YOUR_OUTPUT_FOLDER
+$ cd DIROCTORY_WHERE_THE_BAGFILE_IS
+
+$ ~/slam6d-code/bin/cartographer2scan --bag=NAME_OF_YOUR_BAGFILE --intensity --topics-PointCloud2=/livox/lidar_3GGDJ7U00100171 /livox/lidar_3GGDJ7W00100801 --frame-map=odom --frame-base=base_link --output=YOUR_OUTPUT_FOLDER
 ```
 
 Now we have lefthanded points given in centimeters (uos format). Afterwards, export the points into a righthanded coordinate system in meters:
 ```bash
-$ bin/exportPoints YOUR_OUTPUT_FOLDER -f uosr -R --xyz
+$ ~/slam6d-code/bin/exportPoints YOUR_OUTPUT_FOLDER -f uosr -R --xyz
 ```
 Note that YOUR_OUTPUT_FOLDER is the same as in the cartographer2scan command. The exportPoints command will output a "points.pts" file.
 Feel free to rename it to a fitting extension if you like, e.g. "points.txt". 
